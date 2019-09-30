@@ -11,7 +11,9 @@ const Header = () => (
     <nav className="header-nav">
       <ul>
         <li>
-          <Link to="/guruji">Our Guru</Link>
+          <Link to="/guruji" onMouseEnter={() => console.log('Mouse over!')}>
+            Our Guru
+          </Link>
         </li>
         <li>
           <Link to="/classes">Classes</Link>
