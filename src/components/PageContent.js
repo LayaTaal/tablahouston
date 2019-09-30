@@ -4,7 +4,11 @@ import PropTypes from 'prop-types'
 
 function PageContent(props) {
   const { children } = props
-  return <div className="page-content">{children}</div>
+  return (
+    <div className="page-content">
+      <div className="content-wrapper">{children}</div>
+    </div>
+  )
 }
 
 export default PageContent

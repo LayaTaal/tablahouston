@@ -620,3 +620,54 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/*---------------------
+  Layout
+---------------------*/
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between
+}
+.page-content {
+  width: 60%;
+  padding: 2rem;
+}
+.content-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.page-image {
+  width: 40%;
+  max-width: 800px;
+}
+
+/*---------------------
+  Header
+---------------------*/
+.site-header {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 2rem;
+	align-items: center;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+.header-nav {
+  flex-grow: 1;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  margin-left: 2rem;
+}
+
+.header-nav ul > li {
+  margin: 0 2rem;
+}

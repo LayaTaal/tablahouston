@@ -27,13 +27,11 @@ const IndexPage = () => (
         child, please visit the enrollment page.
       </p>
     </PageContent>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <PageImage
-        filename="tabla-graphic.png"
-        alt="Tabla Houston | The school of Tabla Guru Pandit Shantilal Shah."
-      />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <PageImage
+      filename="tabla-graphic.png"
+      alt="Tabla Houston | The school of Tabla Guru Pandit Shantilal Shah."
+      className="page-image"
+    />
   </Layout>
 )
 
