@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+import PageImage from '../components/PageImage'
 import SEO from '../components/seo'
 import PageContent from '../components/PageContent'
 
@@ -28,7 +28,10 @@ const IndexPage = () => (
       </p>
     </PageContent>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+      <PageImage
+        filename="tabla-graphic.png"
+        alt="Tabla Houston | The school of Tabla Guru Pandit Shantilal Shah."
+      />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
