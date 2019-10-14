@@ -3,26 +3,52 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Logo from './Logo'
 
-const Header = () => (
+const Header = ({ handleEnter, handleLeave }) => (
   <header className="site-header">
     <Link to="/" className="header-logo">
-      <Logo />
+      <Logo name="home" />
     </Link>
     <nav className="header-nav">
       <ul>
         <li>
-          <Link to="/guruji" onMouseEnter={() => console.log('Mouse over!')}>
+          <Link
+            to="/guruji"
+            name="guru"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
+          >
             Our Guru
           </Link>
         </li>
         <li>
-          <Link to="/classes">Classes</Link>
+          <Link
+            to="/classes"
+            name="classes"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
+          >
+            Classes
+          </Link>
         </li>
         <li>
-          <Link to="/events">Student Events</Link>
+          <Link
+            to="/events"
+            name="events"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
+          >
+            Student Events
+          </Link>
         </li>
         <li>
-          <Link to="/enroll">Enroll</Link>
+          <Link
+            to="/enroll"
+            name="enroll"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
+          >
+            Enroll
+          </Link>
         </li>
       </ul>
     </nav>
@@ -30,11 +56,8 @@ const Header = () => (
 )
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+  handleEnter: PropTypes.func,
+  handleLeave: PropTypes.func,
 }
 
 export default Header
